@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flight Search</title>
+    <link th:href="@{/css/styles.css}" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+
+<div class="buscas-container">
+    <div class="busca-inputs">
+        <input class="departureAirPort" type="text" name="departureCode" placeholder="Origem (ex: GRU)" value="GRU">
+        <input class="arrivalAirPort" type="text" name="arrivalCode" placeholder="Destino (ex: FLN)" value="FLN">
+        <input class="departureDate" type="date" name="flightDate" value="2024-08-01">
+        <input class="passengerAmount" type="number" name="numberPassenger" placeholder="Passageiros" value="1">
+        <button class="searchButton" id="searchButton">Buscar</button>
+    </div>
+</div>
+
+<div class="resultados-container" id="results">
+    <!-- Resultados aparecerão aqui -->
+</div>
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>
